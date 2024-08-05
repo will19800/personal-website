@@ -14,6 +14,11 @@ body {
   }
 }
 
+.full-width {
+  display: block;
+  width: 100%;
+}
+
 .custom-text-18 {
   font-size: 18px;
 }
