@@ -1,15 +1,21 @@
 "use client";
 
+import "./globals.css"
+
+import React from "react";
 import Navbar from "./components/Navbar";
 import NavbarBottom from "./components/NavbarBottom";
+import {Canvas} from "@react-three/fiber"
+import Cube from "./components/Cube"
 
 export default function Home() {
+
   return (
     <div className="max-w-2xl w-full">
       <div className="w-full bg-white bg-opacity-50">
         <div className="min-h-screen ">
           <div className="flex flex-row justify-between ">
-            <p className="custom-text-18">will chen</p>
+            <p className="custom-text-18">Will Chen</p>
             <Navbar />
           </div>
           <div className="font-bold pt-10 pb-3 text-mydarkgreen tracking-widest text-lg">
@@ -72,6 +78,11 @@ export default function Home() {
             </a>
           </p>
           <p className="text-mygray">June 2022 - September 2022</p>
+          <div className="flex h-64 my-6">
+            <Canvas dpr={[1, 2]}>
+              <Cube />
+            </Canvas>
+          </div>
           <NavbarBottom />
         </div>
       </div>
